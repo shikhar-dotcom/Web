@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        b{
+            font-size:60px;
+        }
+body,html{
+    background:rgb(115, 120, 141);
+    
+}
+.abc{
+    color:rgba(0, 0, 0, 0);
+animation-name:abcd;
+animation-duration:5s;
+animation-fill-mode:both;
+
+}
+
+        .topnav a {
+  float:center;
+  display:inline;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.topnav a:hover{
+    background-color:rgb(121, 121, 121);
+    color:rgb(49, 49, 49);
+
+}
+
+
+.container123 {
+            position: relative;
+            width: 100%;
+            max-width: 1000px;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            height:100%;
+            overflow:hidden;
+        }
+
+.overlay-text {
+            position: absolute;
+            top:90%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #fff;
+            font-size: 36px;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+            background-color: rgba(0, 0, 0, 0); 
+            padding: 15px 20px;
+            border-radius: 10px; 
+        }
+    .backgr{
+        background:rgb(43, 41, 41);
+    }
+    .box{
+  left:-100%;
+  width:100px;
+  height: 100px;
+  border-radius:15px;
+  background: rgb(65, 72, 75);
+  box-shadow:5px 4px 7px rgb(101, 96, 96) outset;
+  
+ animation:ex;
+animation-duration:2s;
+animation-fill-mode:both;
+    }
+    .modified-box{
+  left:-100%;
+  width:100px;
+  height: 200px;
+  border-radius:15px;
+  background: rgb(55, 57, 58);
+  box-shadow:5px 4px 7px rgb(101, 96, 96) outset;
+  animation:ex;
+animation-duration:2s;
+animation-delay:1s;
+animation-fill-mode:both;
+    }
+
+.container {    
+  position: relative;
+  overflow: hidden;
+}
+.back{
+    background:url();
+    width:100%;
+    height:100px;
+}
+.text{
+    color:rgb(149, 161, 150);
+    position:relative;
+    left:-100%;
+    text-shadow:0px 0px 4px rgb(0, 0, 0);
+    animation: slide-in 2s forwards; /* 2 seconds for the slide-in animation */
+}
+.modified-text{
+    color:rgb(131, 150, 187);
+    position:relative;
+    left:-100%;
+    text-shadow:0px 0px 4px rgb(0, 0, 0);
+    animation: slide-in 2s forwards; /* 2 seconds for the slide-in animation */
+animation-delay:0.5s;}
+#text1{animation-delay:2s;}
+.container1{position: relative;
+    overflow: hidden;
+}
+.text1{
+    position:relative;
+    right:0;
+    text-shadow:3px 2px 5px rgb(63, 63, 72);
+    animation: sliderig 2s backwards; 
+}
+@keyframes abcd{
+    to{
+       color: rgb(183, 183, 183);
+    }
+}
+/* Keyframes for the slide-in animation */
+@keyframes slide-in {
+  to {
+    left:0px; /* End at its original position */
+  }}
+  @keyframes ex{
+    to{width:75%;
+    }
+  }
+@keyframes sliderig{
+    to{right:0;}
+}
+     
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Tracker</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+    <header>
+          
+            <h1>FITness Tracker</h1>
+            <div class="topnav">
+                <ul>
+                <a href="#home">Home</a>
+                <a href="features.html">Features</a>
+                <a href="#about">About Us</a>
+              <a href="#contact">Contact</a>
+               <b style="float:right"> <a href="account.html"><img src="acc-iconwd2.png" alt="acclogo"height="35px"width="35px"></a></b>
+            </ul>
+        </div>
+        </header>
+    <main>
+        <div class="abc">
+    <b>"Be fit and strong, it won't take long. Health is wealth, so keep moving along."</b></div>
+        <section id="home">
+           <div class="backgr">
+                   <div class="container">
+                    <div class="text">
+                    <div class="">          
+                <h2>Track Your Fitness Journey.html</h2>
+                <p>Stay motivated, stay fit! Your health, your priority.</p>
+                    </div></div></div></div>
+        </section>
+
+        <section id="features">
+            <div class="backgr">
+            <div class="container">
+            <div class="modified-text">
+                <div class="modified-box">
+            <h2>Features</h2>
+            <ul>
+                <li>Track your daily steps</li>
+                <li>Monitor your calorie intake</li>
+                <li>Set and achieve fitness goals</li>
+                <li>Get personalized fitness tips</li>
+            </ul></div></div></div></div>
+           
+        </section>
+        
+        <div class="w3-row-padding">
+            <div class="w3-row-padding">      <section id="about">
+            
+                <div class="w3-third">
+            <h2 style="font-size:18px;"><li>About Us</li></h2>
+            <p>We are passionate about helping people stay fit and lead healthy lives. Our fitness tracker is designed to make fitness simple and fun for everyone.</p>
+         
+        </section></div>
+         <h2>Contact Us</h2>
+        <section id="contact">
+          
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <button type="submit">Submit</button>
+            </form>
+        </section></div>
+    </main>
+    <footer>
+        <p>© 2025 Fitness Tracker. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
+
+
+    
